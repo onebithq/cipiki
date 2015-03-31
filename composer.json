@@ -1,0 +1,24 @@
+{
+    "name": "onebit/cipiki",
+    "description": "Really simple git-backed static wiki generator",
+    "require": {
+        "michelf/php-markdown": "~1.5",
+        "symfony/yaml": "~2.6",
+        "symfony/console": "~2.6",
+        "symfony/finder": "~2.6",
+        "symfony/filesystem": "~2.6",
+        "twig/twig": "~1.18"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": {"Onebit\\Cipiki\\": "src/"}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akhyar Amarullah",
+            "email": "akhyrul@gmail.com"
+        }
+    ]
+}

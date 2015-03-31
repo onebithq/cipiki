@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php 
+
+require 'vendor/autoload.php';
+use \Onebit\Cipiki\Command\GenCommand;
+use \Symfony\Component\Console\Application;
+
+$console = new Application();
+$console->add(new GenCommand());
+$console->run();
