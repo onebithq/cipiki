@@ -1,8 +1,12 @@
 # cipiki
-Really simple git-backed static wiki generator
+Really simple static wiki generator
 
 ## Features
 
-* Generate static GitHub-styled wiki from your Git repository
-* Write in markdown
-* Validate links
+* Generate static GitHub-styled wiki
+* Write in Markdown
+* Templating with Twig
+* Styling with LESS (WIP)
+* Link validation (WIP)
+* Monitor source directory for changes (WIP)
+* Webhook receiver (WIP)
