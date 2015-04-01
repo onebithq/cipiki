@@ -32,7 +32,7 @@ class Generator
     public function generate()
     {
         $this->clearTargetDir();
-        $this-v>copyAssets();
+        $this->copyAssets();
         $this->convertAll();
     }
 
