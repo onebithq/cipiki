@@ -10,7 +10,7 @@ use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo\SplFileInfo;
 use Symfony\Component\Console\Output\OutputInterface;
-use Michelf\Markdown;
+use cebe\markdown\GithubMarkdown;
 
 error_reporting(E_ALL);
 
@@ -98,8 +98,8 @@ class Generator
     private function convert($source_file, $target_file)
     {
         $this->prepareDir($target_file);
-
-        $content = Markdown::defaultTransform(file_get_contents($source_file));
+        $parser = new \cebe\markdown\GithubMarkdown();
+        $content = $parser->parse(file_get_contents($source_file));
         $html = $this->render('main.html.twig', ['content' => $content]);
         file_put_contents($target_file, $html);
     }

@@ -2,7 +2,7 @@
     "name": "onebit/cipiki",
     "description": "Really simple git-backed static wiki generator",
     "require": {
-        "michelf/php-markdown": "~1.5",
+        "cebe/markdown": "~1.1",
         "symfony/yaml": "~2.6",
         "symfony/console": "~2.6",
         "symfony/finder": "~2.6",
